@@ -9,14 +9,15 @@ Adafruit_ILI9341 display = Adafruit_ILI9341(TFT_CS, TFT_DC);
 
 int x = 320 / 2;
 int y = 240 / 2;
-int boja = 0;
+int boja = ILI9341_RED;
 int korak = 10;
 
 void postaviEkran() {
   display.begin();
-  display.fillScreen(boja);
+  display.fillScreen(ILI9341_BLACK);
   display.setRotation(3);
   display.setTextColor(boja, ILI9341_BLACK);
+  //display.setTextColor(ILI9341_RED, ILI9341_BLACK);
   display.setTextSize(1);
 }
 
