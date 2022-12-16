@@ -4,7 +4,17 @@ int uspori = 0;
 
 void setup() {
   postaviEkran();
-  //korak = 2;
+  gore();   desno();
+  gore();   desno();
+  gore();   desno();
+  gore();   desno();
+  dolje();  desno();
+  dolje();  desno();
+  dolje();  desno();
+  dolje();  lijevo();
+  lijevo(); lijevo();
+  lijevo(); lijevo();
+  lijevo(); lijevo();
 }
 
 void loop() {
